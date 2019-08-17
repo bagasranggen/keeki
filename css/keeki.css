@@ -1,0 +1,136 @@
+:root {
+  --custom-pink: #fddede;
+  --custom-green: #caf2d7;
+  --custom-dark-green: #60a9a6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* FONT & COLOR */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-nanum {
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+.text-pink {
+  color: var(--custom-pink);
+}
+
+.text-green {
+  color: var(--custom-green);
+}
+
+.text-dark-green {
+  color: var(--custom-dark-green) !important;
+}
+
+.bg-pink {
+  background-color: var(--custom-pink);
+}
+
+.bg-dark-green {
+  background-color: var(--custom-dark-green);
+}
+
+.text-headline {
+  font-size: 80px;
+}
+
+/* BACKGROUND */
+
+#creation {
+  background: url(../assets/bg/bg.svg) no-repeat center;
+  background-size: contain;
+  /* background-clip: padding-box; */
+}
+
+.wave {
+  background-repeat: repeat-x;
+  background-size: contain;
+  z-index: 1000;
+}
+
+.wave::after {
+  content: " ";
+  white-space: pre;
+}
+
+#waveWhite {
+  background-image: url(../assets/bg/waves-white.svg);
+  background-position: bottom;
+  bottom: -2px;
+}
+
+#wavePink {
+  background-image: url(../assets/bg/waves-pink.svg);
+  background-position: top;
+  bottom: -20px;
+}
+
+#backToTop {
+  background-image: url(../assets/bg/btn-up.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  z-index: 1000;
+}
+
+/* POSITION & SIZES*/
+
+.center-overlay {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.unpinned {
+  top: -200px;
+}
+
+.full {
+  height: 100vh;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.socmed {
+  height: 30px;
+}
+
+/* ANIMATION */
+
+#navbar {
+  transition: all .8s;
+}
+
+#quoteRight {
+  bottom: 40%;
+  right: -3%;
+}
+
+.opa-0 {
+  opacity: 0;
+}
+
+.trans-4 {
+  transition: all 0.4s ease-in-out;
+}
+
+.blur {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+
+#ourCreationImages img {
+  height: 400px;
+}
