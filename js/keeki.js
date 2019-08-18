@@ -67,7 +67,7 @@ function loopingOurCreation() {
                       <div class="col-4 p-0 position-relative" id="${ourCreation[i].id}" onmouseenter="blurOurCreation('${ourCreation[i].id}')"
                         onmouseleave="resetOurCreation('${ourCreation[i].id}')" onclick="showGallery(${ourCreation[i].nmbr})">
                         <img class="w-100 object-cover trans-4" src="${ourCreation[i].src}" alt="${ourCreation[i].alt}">
-                        <div class="position-absolute text-nanum h2 text-dark-green center-overlay bg-pink rounded p-2 opa-0 trans-4" >${ourCreation[i].name}</div>
+                        <div class="position-absolute text-nanum h2 text-dark-green center-overlay bg-pink rounded p-2 opa-0 trans-4">${ourCreation[i].name}</div>
                       </div>
                       `;
 
