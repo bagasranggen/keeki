@@ -24,7 +24,7 @@ function show_navbar() {
   }
 
   current_scroll = window_y;
-  // console.log(current_scroll);
+  console.log(current_scroll);
 };
 
 // END SHOW/HIDE NAVBAR
@@ -66,8 +66,10 @@ function loopingOurCreation() {
     var creationData = `
                       <div class="col-4 p-0 position-relative" id="${ourCreation[i].id}" onmouseenter="blurOurCreation('${ourCreation[i].id}')"
                         onmouseleave="resetOurCreation('${ourCreation[i].id}')" onclick="showGallery(${ourCreation[i].nmbr})">
-                        <img class="w-100 object-cover trans-4" src="${ourCreation[i].src}" alt="${ourCreation[i].alt}">
-                        <div class="position-absolute text-nanum h2 text-dark-green center-overlay bg-pink rounded p-2 opa-0 trans-4">${ourCreation[i].name}</div>
+                        <img class="w-100 trans-4" src="${ourCreation[i].src}" alt="${ourCreation[i].alt}">
+                        <div class="position-absolute p-0 center-overlay opa-0 trans-4">
+                          <button class="btn btn-lg px-3 text-nanum bg-pink text-dark-green shadow" type="button">${ourCreation[i].name}</button>
+                        </div>
                       </div>
                       `;
 
@@ -106,19 +108,44 @@ function resetOurCreation(id) {
 };
 
 function showGallery(id) {
-  $('#ourCreationImages').empty();
-  $('#creation').addClass('opa-0');
-  loopingGallery(id);
-  featherlightOn();
+  $('#ourCreationGallery').removeClass('animated fadeOutRightBig');
+  $('#ourCreationImages').addClass('animated fadeOutLeft').on('animationend', galleryFadeIn(id));
+  $('#creation').addClass('animated fadeOutLeft');
+  // $('#creation').addClass('opa-0');
   console.log('Uye!');
 }
 
+function galleryFadeIn(id) {
+  setTimeout(() => {
+    $('#ourCreationGallery').addClass('animated fadeInRightBig');
+    loopingGallery(id);
+    featherlightOn();
+    setTimeout(() => {
+      $('#ourCreationImages').empty();
+    }, 100);
+  }, 700);
+}
+
 function revertCarousel() {
-  $('#ourCreationGallery').empty();
-  $('#creation').removeClass('opa-0');
-  loopingOurCreation();
+  $('#ourCreationGallery').removeClass('animated fadeInRightBig').addClass('animated fadeOutRightBig').on('animationend', galleryFadeOut())
+  // .empty();
+
+  // $('#creation').removeClass('opa-0');
+  // $('#ourCreation').removeClass('animated fadeInDown').addClass('animated fadeOutDown');
+
   console.log('Mantul!');
 }
+
+function galleryFadeOut() {
+  setTimeout(() => {
+    loopingOurCreation();
+    $('#creation').removeClass('animated fadeOutLeft').addClass('animated fadeIn slow');
+    setTimeout(() => {
+      $('#ourCreationGallery').empty();
+      $('#ourCreationImages').removeClass('animated fadeOutLeft').addClass('animated fadeInLeft');
+    }, 100);
+  }, 700);
+};
 
 function loopingGallery(id) {
   var header = `
@@ -127,7 +154,7 @@ function loopingGallery(id) {
               <div class="row">
                 <div class="col-2" onclick="revertCarousel()">
                   <a class="carousel-control-prev" role="button">
-                    <i class="fas fa-3x fa-angle-double-left"></i>
+                    <i class="fas text-dark-green fa-3x fa-angle-double-left"></i>
                     <span class="sr-only">Back to Gallery</span>
                   </a>
                 </div>
@@ -155,7 +182,7 @@ function loopingGallery(id) {
 
   // console.log(galleryData);
 
-  galleryContainer = '<div class="row pb-5">' + galleryData + '</div>';
+  galleryContainer = '<div class="row pb-5" id="ourCreationGalleryContainer">' + galleryData + '</div>';
 
   // console.log(galleryContainer);
 
@@ -183,7 +210,6 @@ function featherlightOn() {
   });
 }
 
-
 $.featherlight.defaults.afterClose = afterClose;
 $.featherlight.defaults.beforeOpen = beforeOpen;
 
@@ -193,4 +219,13 @@ function afterClose() {
 
 function beforeOpen() {
   backgroundBlurred();
+}
+
+
+function testAnimate() {
+  $('#ourStory').addClass('animated fadeInDown slow');
+}
+
+function testDeleteAnimation() {
+  $('#ourStory').removeClass('animated fadeInDown slow');
 }

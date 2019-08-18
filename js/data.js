@@ -82,6 +82,14 @@ var ourCreation = [
         full: 'assets/our-creation/wc-gallery/full/wc-full-6.jpg',
         thumb: 'assets/our-creation/wc-gallery/wc-thumb-6.jpg',
         alt: ''
+      }, {
+        full: 'assets/our-creation/wc-gallery/full/wc-full-7.jpg',
+        thumb: 'assets/our-creation/wc-gallery/wc-thumb-7.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/wc-gallery/full/wc-full-8.jpg',
+        thumb: 'assets/our-creation/wc-gallery/wc-thumb-8.jpg',
+        alt: ''
       }
     ]
   }, {

@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Pen+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/featherlight.css">
   <link rel="stylesheet" href="css/featherlight.gallery.css">
-  <script src="js/data.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="css/keeki.css">
   <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
 </head>
@@ -101,63 +101,27 @@
 
     </div>
 
-    <!-- <div class="text-center">
-      <button class="btn btn-success" onclick="showGallery(0)">test</button>
-      <button class="btn btn-danger" onclick="revertCarousel()">reset</button>
-    </div> -->
+    <div class="text-center">
+      <button class="btn btn-success" onclick="testAnimate()">test</button>
+      <button class="btn btn-danger" onclick="testDeleteAnimation()">reset</button>
+    </div>
 
   </section> <!-- END OUR STORY -->
 
   <!-- OUR CREATION -->
   <section class="container-fluid bg-pink my-5 trans-4" id="ourCreation">
     <div class="container">
+      
       <div class="position-relative">
+          <div class="position-absolute text-headline text-nanum text-dark-green px-4 center-overlay" id="creation">our
+              creation</div>
 
         <!-- OUR CREATION GALLERY -->
-        <div id="ourCreationGallery">
-          <!-- 
-          <div class="row py-5">
-            <div class="col-12">
-              <div class="row">
+        <div id="ourCreationGallery"></div> <!-- END OUR CREATION GALLERY -->
 
-                <div class="col-2" onclick="revertCarousel()">
-                  <a class="carousel-control-prev" role="button">
-                    <i class="fas fa-3x fa-angle-double-left"></i>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                </div>
+        <div class="row" id="ourCreationImages">
 
-                <div class="col-10 text-right">
-                  <p class="h1 text-dark-green text-nanum">birtday cake</p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="row pb-5">
-            <div class="col-3 pb-4">
-              <a href="assets/our-creation/wc-gallery/full/wc-full-1.jpg" class="thumbnail gallery">
-                <img class="w-100 rounded" src="assets/our-creation/wc-gallery/wc-thumb-1.jpg" alt="">
-              </a>
-            </div>
-            <div class="col-3 pb-4">
-              <a href="assets/our-creation/canape.jpg" class="thumbnail gallery">
-                <img class="w-100 rounded" src="assets/our-creation/canape.jpg" alt="">
-              </a>
-            </div>
-
-          </div> -->
-        </div> <!-- END OUR CREATION GALLERY -->
-
-        <!-- <img src="assets/our-creation/wc-gallery/wc-thumb-1.jpg" alt=""> -->
-        <!-- <img src="assets/our-creation/wc-gallery/full/wc-full-1.jpg" alt=""> -->
-        <div class="position-absolute text-headline text-nanum text-dark-green px-4 center-overlay" id="creation">our
-          creation</div>
-
-        <div class="row" id="ourCreationImages"></div>
-
-
+        </div>
 
       </div>
     </div>
@@ -250,7 +214,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
+  <script src="js/data.js"></script>
   <script src="js/featherlight.js"></script>
   <script src="js/featherlight.gallery.js"></script>
 
