@@ -70,12 +70,6 @@ body {
   white-space: pre;
 }
 
-#waveWhite {
-  background-image: url(../assets/bg/waves-white.svg);
-  background-position: bottom;
-  bottom: -2px;
-}
-
 #wavePink {
   background-image: url(../assets/bg/waves-pink.svg);
   background-position: top;
@@ -83,12 +77,27 @@ body {
 }
 
 #backToTop {
-  background-image: url(../assets/bg/btn-up.svg);
+  background: url(../assets/bg/btn-up.svg) no-repeat;
   background-size: contain;
-  background-repeat: no-repeat;
   transform: translate(-50%, -50%);
   left: 50%;
   z-index: 1000;
+}
+
+#navbarCollapse ul li a::after {
+  position: absolute;
+  background: url(../assets/bg/underline-wave.svg) repeat-x bottom;
+  content: '';
+  white-space: pre;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0;
+}
+
+#navbarCollapse ul li a:hover::after {
+  width: 100%;
 }
 
 /* POSITION & SIZES*/
@@ -116,8 +125,13 @@ body {
   height: 30px;
 }
 
-.testimonialContainer {
-  height: 180px;
+#quoteRight {
+  bottom: 40%;
+  right: -3%;
+}
+
+#ourCreationImages button {
+  font-size: 2rem;
 }
 
 /* ANIMATION */
@@ -126,13 +140,8 @@ body {
   transition: all 0.8s;
 }
 
-#quoteRight {
-  bottom: 40%;
-  right: -3%;
-}
-
-.opa-0 {
-  opacity: 0;
+#navbarCollapse ul li a, #navbarCollapse ul li a::before, #navbarCollapse ul li a::after {
+  transition: all 0.4s;
 }
 
 .trans-4 {
@@ -144,49 +153,51 @@ body {
   filter: blur(4px);
 }
 
-#ourCreationImages button {
-  font-size: 2rem;
-}
-
 .pointer {
   cursor: pointer;
 }
 
+.opa-0 {
+  opacity: 0;
+}
+
 /* RESPONSIVE TABLET */
+
 @media screen and (max-width: 768px) {
   .full {
     height: 60vh;
   }
-
   .text-headline {
     font-size: 70px;
   }
-
   p {
     font-size: 0.9rem;
   }
-
   #creation {
     height: 113px;
+  }
+  #ourCreationImages button {
+    font-size: 1.2rem;
   }
 }
 
 /* RESPONSIVE MOBILE */
+
 @media screen and (max-width: 414px) {
   .text-headline {
     font-size: 45px;
   }
-
   p {
     font-size: 0.7rem;
   }
-
   #creation {
     width: 250px;
     height: 70px;
   }
-
-  .testimonialContainer {
-    /* height: 300px; */
+  #ourCreationImages button {
+    font-size: 0.5rem;
+  }
+  .d-sm-none {
+    display: none;
   }
 }

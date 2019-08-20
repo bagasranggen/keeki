@@ -64,7 +64,7 @@ function loopingCarousel() {
 function loopingOurCreation() {
   for (var i = 0; i < ourCreation.length; i++) {
     var creationData = `
-                      <div class="col-4 p-0 position-relative" id="${ourCreation[i].id}" onmouseenter="blurOurCreation('${ourCreation[i].id}')"
+                      <div class="col-4 p-0 pointer position-relative" id="${ourCreation[i].id}" onmouseenter="blurOurCreation('${ourCreation[i].id}')"
                         onmouseleave="resetOurCreation('${ourCreation[i].id}')" onclick="showGallery(${ourCreation[i].nmbr})">
                         <img class="w-100 trans-4" src="${ourCreation[i].src}" alt="${ourCreation[i].alt}">
                         <div class="position-absolute p-0 center-overlay opa-0 trans-4">
@@ -80,7 +80,7 @@ function loopingOurCreation() {
 function loopingCarouselTesti() {
   for (var i = 0; i < testimonial.length; i++) {
     var data = `
-        <div class="carousel-item pr-5 testimonialContainer ${testimonial[i].default}">
+        <div class="carousel-item pr-5 ${testimonial[i].default}">
           <div class="w-75 ml-auto pr-lg-5 pr-md-5">
             <div class="position-relative mr-lg-5">
               <div class="position-absolute" id="quoteLeft"><i class="fas fa-quote-left"></i></div>
@@ -148,7 +148,7 @@ function loopingGallery(id) {
             <div class="col-12">
               <div class="row">
                 <div class="col-2" onclick="revertCarousel()">
-                  <a class="carousel-control-prev" role="button">
+                  <a class="carousel-control-prev" role="button" href="#ourCreation">
                     <i class="fas text-dark-green fa-3x fa-angle-double-left"></i>
                     <span class="sr-only">Back to Gallery</span>
                   </a>
