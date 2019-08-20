@@ -94,42 +94,42 @@ var ourCreation = [
     ]
   }, {
     nmbr: 1,
-    id: 'bc',
-    name: 'birthday cake',
+    id: 'ks',
+    name: 'keeki\'s signature',
     alt: '',
-    src: 'assets/our-creation/birthday-cake.jpg',
+    src: 'assets/our-creation/keekis-signature.jpg',
     gallery: [
       {
-        full: 'assets/our-creation/bc-gallery/full/bc-full-1.jpg',
-        thumb: 'assets/our-creation/bc-gallery/bc-thumb-1.jpg',
+        full: 'assets/our-creation/ks-gallery/full/ks-full-1.jpg',
+        thumb: 'assets/our-creation/ks-gallery/ks-thumb-1.jpg',
         alt: ''
       }, {
-        full: 'assets/our-creation/bc-gallery/full/bc-full-2.jpg',
-        thumb: 'assets/our-creation/bc-gallery/bc-thumb-2.jpg',
+        full: 'assets/our-creation/ks-gallery/full/ks-full-2.jpg',
+        thumb: 'assets/our-creation/ks-gallery/ks-thumb-2.jpg',
         alt: ''
       }, {
-        full: 'assets/our-creation/bc-gallery/full/bc-full-3.jpg',
-        thumb: 'assets/our-creation/bc-gallery/bc-thumb-3.jpg',
+        full: 'assets/our-creation/ks-gallery/full/ks-full-3.jpg',
+        thumb: 'assets/our-creation/ks-gallery/ks-thumb-3.jpg',
         alt: ''
       }, {
-        full: 'assets/our-creation/bc-gallery/full/bc-full-4.jpg',
-        thumb: 'assets/our-creation/bc-gallery/bc-thumb-4.jpg',
+        full: 'assets/our-creation/ks-gallery/full/ks-full-4.jpg',
+        thumb: 'assets/our-creation/ks-gallery/ks-thumb-4.jpg',
         alt: ''
       }, {
-        full: 'assets/our-creation/bc-gallery/full/bc-full-5.jpg',
-        thumb: 'assets/our-creation/bc-gallery/bc-thumb-5.jpg',
+        full: 'assets/our-creation/ks-gallery/full/ks-full-5.jpg',
+        thumb: 'assets/our-creation/ks-gallery/ks-thumb-5.jpg',
         alt: ''
       }, {
-        full: 'assets/our-creation/bc-gallery/full/bc-full-6.jpg',
-        thumb: 'assets/our-creation/bc-gallery/bc-thumb-6.jpg',
+        full: 'assets/our-creation/ks-gallery/full/ks-full-6.jpg',
+        thumb: 'assets/our-creation/ks-gallery/ks-thumb-6.jpg',
         alt: ''
       }, {
-        full: 'assets/our-creation/bc-gallery/full/bc-full-7.jpg',
-        thumb: 'assets/our-creation/bc-gallery/bc-thumb-7.jpg',
+        full: 'assets/our-creation/ks-gallery/full/ks-full-7.jpg',
+        thumb: 'assets/our-creation/ks-gallery/ks-thumb-7.jpg',
         alt: ''
       }, {
-        full: 'assets/our-creation/bc-gallery/full/bc-full-8.jpg',
-        thumb: 'assets/our-creation/bc-gallery/bc-thumb-8.jpg',
+        full: 'assets/our-creation/ks-gallery/full/ks-full-8.jpg',
+        thumb: 'assets/our-creation/ks-gallery/ks-thumb-8.jpg',
         alt: ''
       }, 
     ]

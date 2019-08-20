@@ -24,7 +24,7 @@ function show_navbar() {
   }
 
   current_scroll = window_y;
-  console.log(current_scroll);
+  // console.log(current_scroll);
 };
 
 // END SHOW/HIDE NAVBAR
@@ -33,14 +33,10 @@ function openHours() {
   var today = new Date();
   var hour = today.getHours();
   var day = today.getDay();
-  console.log(hour);
-  console.log(day);
 
-  if (hour >= 10 && hour <= 16 && day != 6 && day != 0) {
-    console.log('yay!')
+  if (hour >= 10 && hour <= 18 && day != 6 && day != 0) {
     $('#openHours').html('yes, we are open now!');
   } else {
-    console.log('nay!');
     $('#openHours').html('we are closed :(');
   }
 };
@@ -86,7 +82,7 @@ function loopingCarouselTesti() {
               <div class="position-absolute" id="quoteLeft"><i class="fas fa-quote-left"></i></div>
               <div class="position-absolute" id="quoteRight"><i class="fas fa-quote-right"></i></div>
               <p class="p-4 text-right">${testimonial[i].testi}</p>
-              <h3 class="text-right text-nanum">- ${testimonial[i].name}</h3>
+              <p class="h3 pt-3 text-right text-nanum">- ${testimonial[i].name}</p>
             </div>
           </div>
         </div>
@@ -148,7 +144,7 @@ function loopingGallery(id) {
             <div class="col-12">
               <div class="row">
                 <div class="col-2" onclick="revertCarousel()">
-                  <a class="carousel-control-prev" role="button" href="#ourCreation">
+                  <a class="carousel-control-prev" role="button" href="#ourCreation" style="left: auto">
                     <i class="fas text-dark-green fa-3x fa-angle-double-left"></i>
                     <span class="sr-only">Back to Gallery</span>
                   </a>
@@ -202,6 +198,11 @@ function featherlightOn() {
       openSpeed: 300,
       closeSpeed: 300
     });
+  });
+  $('a.gallery').featherlightGallery({
+    previousIcon: '«',
+    nextIcon: '»',
+    variant: 'cleaner'
   });
 }
 

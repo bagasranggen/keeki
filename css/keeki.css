@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
 .text-nanum {
@@ -51,9 +52,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  width: 400px;
+  width: 405px;
   height: 122px;
-  /* height: 30%; */
   margin: auto;
   z-index: 1000;
   background-clip: padding-box;
@@ -73,7 +73,7 @@ body {
 #wavePink {
   background-image: url(../assets/bg/waves-pink.svg);
   background-position: top;
-  bottom: -20px;
+  bottom: -23px;
 }
 
 #backToTop {
@@ -88,7 +88,7 @@ body {
   position: absolute;
   background: url(../assets/bg/underline-wave.svg) repeat-x bottom;
   content: '';
-  white-space: pre;
+  height: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -126,7 +126,7 @@ body {
 }
 
 #quoteRight {
-  bottom: 40%;
+  bottom: 20%;
   right: -3%;
 }
 
@@ -149,8 +149,8 @@ body {
 }
 
 .blur {
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
 }
 
 .pointer {
@@ -159,6 +159,10 @@ body {
 
 .opa-0 {
   opacity: 0;
+}
+
+#contact div.row div.col-lg-6 a {
+  color: var(--custom-dark-green);
 }
 
 /* RESPONSIVE TABLET */
@@ -178,6 +182,12 @@ body {
   }
   #ourCreationImages button {
     font-size: 1.2rem;
+  }
+  .fa-3x {
+    font-size: 2em;
+  }
+  a.navbar-brand img, img.pt-5 {
+    width: 100px;
   }
 }
 
@@ -199,5 +209,23 @@ body {
   }
   .d-sm-none {
     display: none;
+  }
+  .fa-3x {
+    font-size: 1.2em;
+  }
+  .h1 {
+    font-size: 1.8rem;
+  }
+  .h3 {
+    font-size: 1rem;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+  .py-sm-3 {
+    padding-bottom: 1rem !important;
+  }
+  a.navbar-brand img, img.pt-5 {
+    width: 80px;
   }
 }
