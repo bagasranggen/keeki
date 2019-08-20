@@ -134,3 +134,7 @@ body {
 #ourCreationImages button {
   font-size: 2rem;
 }
+
+.pointer {
+  cursor: pointer;
+}
