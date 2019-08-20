@@ -100,7 +100,37 @@ var ourCreation = [
     src: 'assets/our-creation/birthday-cake.jpg',
     gallery: [
       {
-
+        full: 'assets/our-creation/bc-gallery/full/bc-full-1.jpg',
+        thumb: 'assets/our-creation/bc-gallery/bc-thumb-1.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/bc-gallery/full/bc-full-2.jpg',
+        thumb: 'assets/our-creation/bc-gallery/bc-thumb-2.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/bc-gallery/full/bc-full-3.jpg',
+        thumb: 'assets/our-creation/bc-gallery/bc-thumb-3.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/bc-gallery/full/bc-full-4.jpg',
+        thumb: 'assets/our-creation/bc-gallery/bc-thumb-4.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/bc-gallery/full/bc-full-5.jpg',
+        thumb: 'assets/our-creation/bc-gallery/bc-thumb-5.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/bc-gallery/full/bc-full-6.jpg',
+        thumb: 'assets/our-creation/bc-gallery/bc-thumb-6.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/bc-gallery/full/bc-full-7.jpg',
+        thumb: 'assets/our-creation/bc-gallery/bc-thumb-7.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/bc-gallery/full/bc-full-8.jpg',
+        thumb: 'assets/our-creation/bc-gallery/bc-thumb-8.jpg',
+        alt: ''
       }, 
     ]
   }, {
@@ -111,7 +141,25 @@ var ourCreation = [
     src: 'assets/our-creation/canape.jpg',
     gallery: [
       {
-
+        full: 'assets/our-creation/canape-gallery/full/canape-full-1.jpg',
+        thumb: 'assets/our-creation/canape-gallery/canape-thumb-1.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/canape-gallery/full/canape-full-2.jpg',
+        thumb: 'assets/our-creation/canape-gallery/canape-thumb-2.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/canape-gallery/full/canape-full-3.jpg',
+        thumb: 'assets/our-creation/canape-gallery/canape-thumb-3.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/canape-gallery/full/canape-full-4.jpg',
+        thumb: 'assets/our-creation/canape-gallery/canape-thumb-4.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/canape-gallery/full/canape-full-5.jpg',
+        thumb: 'assets/our-creation/canape-gallery/canape-thumb-5.jpg',
+        alt: ''
       }, 
     ]
   }, {
@@ -122,7 +170,37 @@ var ourCreation = [
     src: 'assets/our-creation/cupcakes.jpg',
     gallery: [
       {
-
+        full: 'assets/our-creation/cupcake-gallery/full/cupcake-full-1.jpg',
+        thumb: 'assets/our-creation/cupcake-gallery/cupcake-thumb-1.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cupcake-gallery/full/cupcake-full-2.jpg',
+        thumb: 'assets/our-creation/cupcake-gallery/cupcake-thumb-2.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cupcake-gallery/full/cupcake-full-3.jpg',
+        thumb: 'assets/our-creation/cupcake-gallery/cupcake-thumb-3.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cupcake-gallery/full/cupcake-full-4.jpg',
+        thumb: 'assets/our-creation/cupcake-gallery/cupcake-thumb-4.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cupcake-gallery/full/cupcake-full-5.jpg',
+        thumb: 'assets/our-creation/cupcake-gallery/cupcake-thumb-5.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cupcake-gallery/full/cupcake-full-6.jpg',
+        thumb: 'assets/our-creation/cupcake-gallery/cupcake-thumb-6.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cupcake-gallery/full/cupcake-full-7.jpg',
+        thumb: 'assets/our-creation/cupcake-gallery/cupcake-thumb-7.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cupcake-gallery/full/cupcake-full-8.jpg',
+        thumb: 'assets/our-creation/cupcake-gallery/cupcake-thumb-8.jpg',
+        alt: ''
       }, 
     ]
   }, {
