@@ -80,9 +80,9 @@ function loopingOurCreation() {
 function loopingCarouselTesti() {
   for (var i = 0; i < testimonial.length; i++) {
     var data = `
-        <div class="carousel-item pr-5 ${testimonial[i].default}" style="height: 180px">
-          <div class="w-75 ml-auto pr-5">
-            <div class="position-relative mr-5">
+        <div class="carousel-item pr-5 testimonialContainer ${testimonial[i].default}">
+          <div class="w-75 ml-auto pr-lg-5 pr-md-5">
+            <div class="position-relative mr-lg-5">
               <div class="position-absolute" id="quoteLeft"><i class="fas fa-quote-left"></i></div>
               <div class="position-absolute" id="quoteRight"><i class="fas fa-quote-right"></i></div>
               <p class="p-4 text-right">${testimonial[i].testi}</p>
@@ -111,7 +111,6 @@ function showGallery(id) {
   $('#ourCreationGallery').removeClass('animated fadeOutRightBig');
   $('#ourCreationImages').addClass('animated fadeOutLeft').on('animationend', galleryFadeIn(id));
   $('#creation').addClass('animated fadeOutLeft');
-  // $('#creation').addClass('opa-0');
   console.log('Uye!');
 }
 
@@ -128,19 +127,15 @@ function galleryFadeIn(id) {
 
 function revertCarousel() {
   $('#ourCreationGallery').removeClass('animated fadeInRightBig').addClass('animated fadeOutRightBig').on('animationend', galleryFadeOut())
-  // .empty();
-
-  // $('#creation').removeClass('opa-0');
-  // $('#ourCreation').removeClass('animated fadeInDown').addClass('animated fadeOutDown');
-
   console.log('Mantul!');
 }
 
 function galleryFadeOut() {
   setTimeout(() => {
     loopingOurCreation();
-    $('#creation').removeClass('animated fadeOutLeft').addClass('animated fadeIn slow');
+
     setTimeout(() => {
+      $('#creation').removeClass('animated fadeOutLeft').addClass('animated fadeInLeft');
       $('#ourCreationGallery').empty();
       $('#ourCreationImages').removeClass('animated fadeOutLeft').addClass('animated fadeInLeft');
     }, 100);

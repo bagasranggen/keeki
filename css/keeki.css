@@ -47,7 +47,16 @@ body {
 #creation {
   background: url(../assets/bg/bg.svg) no-repeat center;
   background-size: contain;
-  /* background-clip: padding-box; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  height: 122px;
+  /* height: 30%; */
+  margin: auto;
+  z-index: 1000;
+  background-clip: padding-box;
 }
 
 .wave {
@@ -107,10 +116,14 @@ body {
   height: 30px;
 }
 
+.testimonialContainer {
+  height: 180px;
+}
+
 /* ANIMATION */
 
 #navbar {
-  transition: all .8s;
+  transition: all 0.8s;
 }
 
 #quoteRight {
@@ -133,4 +146,43 @@ body {
 
 #ourCreationImages button {
   font-size: 2rem;
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  .full {
+    height: 60vh;
+  }
+
+  .text-headline {
+    font-size: 70px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  #creation {
+    height: 113px;
+  }
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 414px) {
+  .text-headline {
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  #creation {
+    width: 250px;
+    height: 70px;
+  }
+
+  .testimonialContainer {
+    /* height: 300px; */
+  }
 }

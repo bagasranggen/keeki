@@ -133,8 +133,38 @@ var ourCreation = [
     src: 'assets/our-creation/cookies.jpg',
     gallery: [
       {
-
-      }, 
+        full: 'assets/our-creation/cookies-gallery/full/cookies-full-1.jpg',
+        thumb: 'assets/our-creation/cookies-gallery/cookies-thumb-1.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cookies-gallery/full/cookies-full-2.jpg',
+        thumb: 'assets/our-creation/cookies-gallery/cookies-thumb-2.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cookies-gallery/full/cookies-full-3.jpg',
+        thumb: 'assets/our-creation/cookies-gallery/cookies-thumb-3.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cookies-gallery/full/cookies-full-4.jpg',
+        thumb: 'assets/our-creation/cookies-gallery/cookies-thumb-4.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cookies-gallery/full/cookies-full-5.jpg',
+        thumb: 'assets/our-creation/cookies-gallery/cookies-thumb-5.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cookies-gallery/full/cookies-full-6.jpg',
+        thumb: 'assets/our-creation/cookies-gallery/cookies-thumb-6.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cookies-gallery/full/cookies-full-7.jpg',
+        thumb: 'assets/our-creation/cookies-gallery/cookies-thumb-7.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/cookies-gallery/full/cookies-full-8.jpg',
+        thumb: 'assets/our-creation/cookies-gallery/cookies-thumb-8.jpg',
+        alt: ''
+      },
     ]
   }, {
     nmbr: 5,
@@ -144,8 +174,38 @@ var ourCreation = [
     src: 'assets/our-creation/snacks.jpg',
     gallery: [
       {
-
-      }, 
+        full: 'assets/our-creation/snacks-gallery/full/snacks-full-1.jpg',
+        thumb: 'assets/our-creation/snacks-gallery/snacks-thumb-1.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/snacks-gallery/full/snacks-full-2.jpg',
+        thumb: 'assets/our-creation/snacks-gallery/snacks-thumb-2.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/snacks-gallery/full/snacks-full-3.jpg',
+        thumb: 'assets/our-creation/snacks-gallery/snacks-thumb-3.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/snacks-gallery/full/snacks-full-4.jpg',
+        thumb: 'assets/our-creation/snacks-gallery/snacks-thumb-4.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/snacks-gallery/full/snacks-full-5.jpg',
+        thumb: 'assets/our-creation/snacks-gallery/snacks-thumb-5.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/snacks-gallery/full/snacks-full-6.jpg',
+        thumb: 'assets/our-creation/snacks-gallery/snacks-thumb-6.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/snacks-gallery/full/snacks-full-7.jpg',
+        thumb: 'assets/our-creation/snacks-gallery/snacks-thumb-7.jpg',
+        alt: ''
+      }, {
+        full: 'assets/our-creation/snacks-gallery/full/snacks-full-8.jpg',
+        thumb: 'assets/our-creation/snacks-gallery/snacks-thumb-8.jpg',
+        alt: ''
+      },
     ]
   },
 ];
