@@ -106,7 +106,6 @@ function showGallery(id) {
   $('#ourCreationGallery').removeClass('animated fadeOutRightBig');
   $('#ourCreationImages').addClass('animated fadeOutLeft').on('animationend', galleryFadeIn(id));
   $('#creation').removeClass('fadeInLeft').addClass('animated fadeOutLeft opa-0');
-  console.log('Uye!');
 }
 
 function galleryFadeIn(id) {
