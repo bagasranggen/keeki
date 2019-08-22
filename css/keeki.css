@@ -169,7 +169,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .full {
-    height: 60vh;
+    height: 65vh;
   }
   .text-headline {
     font-size: 70px;

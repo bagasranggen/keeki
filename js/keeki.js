@@ -1,10 +1,12 @@
 init();
 
+
 function init() {
   openHours();
   loopingCarousel();
   loopingOurCreation();
   loopingCarouselTesti();
+  new WOW().init();
 }
 
 //  SHOW/HIDE NAVBAR
@@ -22,9 +24,7 @@ function show_navbar() {
   } else {
     $('#navbar').removeClass('unpinned');
   }
-
   current_scroll = window_y;
-  // console.log(current_scroll);
 };
 
 // END SHOW/HIDE NAVBAR
@@ -95,7 +95,6 @@ function loopingCarouselTesti() {
 function blurOurCreation(id) {
   $('#' + id).children().first().addClass('blur');
   $('#' + id).children().last().css('opacity', 1);
-  console.log('yay!');
 };
 
 function resetOurCreation(id) {
@@ -106,7 +105,7 @@ function resetOurCreation(id) {
 function showGallery(id) {
   $('#ourCreationGallery').removeClass('animated fadeOutRightBig');
   $('#ourCreationImages').addClass('animated fadeOutLeft').on('animationend', galleryFadeIn(id));
-  $('#creation').addClass('animated fadeOutLeft');
+  $('#creation').removeClass('fadeInLeft').addClass('animated fadeOutLeft opa-0');
   console.log('Uye!');
 }
 
@@ -131,7 +130,7 @@ function galleryFadeOut() {
     loopingOurCreation();
 
     setTimeout(() => {
-      $('#creation').removeClass('animated fadeOutLeft').addClass('animated fadeInLeft');
+      $('#creation').removeClass('animated fadeOutLeft opa-0').addClass('animated fadeInLeft');
       $('#ourCreationGallery').empty();
       $('#ourCreationImages').removeClass('animated fadeOutLeft').addClass('animated fadeInLeft');
     }, 100);
@@ -144,7 +143,7 @@ function loopingGallery(id) {
             <div class="col-12">
               <div class="row">
                 <div class="col-2" onclick="revertCarousel()">
-                  <a class="carousel-control-prev" role="button" href="#ourCreation" style="left: auto">
+                  <a class="carousel-control-prev" role="button" style="left: auto">
                     <i class="fas text-dark-green fa-3x fa-angle-double-left"></i>
                     <span class="sr-only">Back to Gallery</span>
                   </a>
@@ -217,11 +216,3 @@ function beforeOpen() {
   backgroundBlurred();
 }
 
-
-function testAnimate() {
-  $('#ourStory').addClass('animated fadeInDown slow');
-}
-
-function testDeleteAnimation() {
-  $('#ourStory').removeClass('animated fadeInDown slow');
-}
